@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Portfolio - Tanzanite Interiors</title>
+    <meta name="description" content="Explore our diverse portfolio of interior design projects, showcasing our expertise in residential, commercial, and specialized spaces.">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <header>
+        <nav>
+			<a href="index.html" class="logo-container">
+				<img src="images/logo.png" alt="Logo">
+				<span>Tanzanite Interiors</span>
+			</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero" style="background-image: url('images/portfolio.webp'); background-position: center; background-size: cover;">
+            <div class="container">
+                <h1>Our Portfolio</h1>
+                <p>A showcase of our finest interior design projects</p>
+            </div>
+        </section>
+
+        <section class="portfolio">
+            <div class="container">
+                <div class="portfolio-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="residential">Residential</button>
+                    <button class="filter-btn" data-filter="commercial">Commercial</button>
+                    <button class="filter-btn" data-filter="hospitality">Hospitality</button>
+                </div>
+
+                <div class="portfolio-grid">
+                    <div class="portfolio-item" data-category="residential">
+                        <img src="images/modern-living-room.jpg" alt="Modern Living Room" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <h3>Modern Living Room</h3>
+                            <p>A sleek and comfortable space for family gatherings</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="commercial">
+                        <img src="images/creative-office-space.jpg" alt="Creative Office Space" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <h3>Creative Office Space</h3>
+                            <p>An inspiring environment for a tech startup</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="hospitality">
+                        <img src="images/luxury-hotel-lobby.jpg" alt="Luxury Hotel Lobby" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <h3>Luxury Hotel Lobby</h3>
+                            <p>An elegant welcome area for discerning guests</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="residential">
+                        <img src="images/cozy-bedroom.jpg" alt="Cozy Bedroom Retreat" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <h3>Cozy Bedroom Retreat</h3>
+                            <p>A serene space for relaxation and rejuvenation</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="commercial">
+                        <img src="images/modern-retail-store.jpg" alt="Modern Retail Store" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <h3>Modern Retail Store</h3>
+                            <p>An inviting space that showcases products beautifully</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="hospitality">
+                        <img src="images/resetaurant-interior.jpg" alt="Chic Restaurant Interior" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <h3>Chic Restaurant Interior</h3>
+                            <p>A stylish dining environment that enhances the culinary experience</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div id="lightbox" class="lightbox">
+            <span class="close">&times;</span>
+            <img class="lightbox-content" id="lightbox-img">
+            <div id="lightbox-caption"></div>
+        </div>
+
+        <section class="cta">
+            <div class="container">
+                <h2>Inspired by Our Work?</h2>
+                <p>Let's create something amazing together for your space.</p>
+                <a href="contact.html" class="btn btn-primary">Start Your Project</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Tanzanite Interiors</h3>
+                    <p>Transforming spaces, enriching lives through exceptional interior design.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>123 Design Street, Creativity City, ST 12345</p>
+                    <p>Phone: (555) 123-4567</p>
+                    <p>Email: info@tanzaniteinteriors.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                        <a href="#" aria-label="Pinterest"><i data-lucide="pinterest"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Tanzanite Interiors. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

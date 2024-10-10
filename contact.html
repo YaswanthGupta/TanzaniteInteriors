@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Tanzanite Interiors</title>
+    <meta name="description" content="Get in touch with Tanzanite Interiors for your interior design needs. Schedule a consultation or ask us any questions.">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <header>
+        <nav>
+			<a href="index.html" class="logo-container">
+				<img src="images/logo.png" alt="Logo">
+				<span>Tanzanite Interiors</span>
+			</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero" style="background-image: url('images/contact.webp'); background-position: center; background-size: cover;">
+            <div class="container">
+                <h1>Contact Us</h1>
+                <p>Get in touch with our team of expert designers</p>
+            </div>
+        </section>
+
+        <section class="contact-content">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-form fade-in">
+                        <h2>Send Us a Message</h2>
+                        <form id="contact-form">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                    <div class="contact-info slide-in-right">
+                        <h2>Contact Information</h2>
+                        <ul>
+                            <li>
+                                <i data-lucide="map-pin"></i>
+                                <span>123 Design Street, Creativity City, ST 12345</span>
+                            </li>
+                            <li>
+                                <i data-lucide="phone"></i>
+                                <span>(555) 123-4567</span>
+                            </li>
+                            <li>
+                                <i data-lucide="mail"></i>
+                                <span>info@tanzaniteinteriors.com</span>
+                            </li>
+                        </ul>
+                        <h3>Office Hours</h3>
+                        <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                        <p>Saturday: 10:00 AM - 4:00 PM</p>
+                        <p>Sunday: Closed</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="map">
+            <div class="container">
+                <h2>Our Location</h2>
+                <div id="google-map" class="fade-in">
+                    <!-- Replace with actual Google Maps embed code -->
+                    <img src="/placeholder.svg?height=400&width=800" alt="Map of Tanzanite Interiors location" loading="lazy">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Tanzanite Interiors</h3>
+                    <p>Transforming spaces, enriching lives through exceptional interior design.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>123 Design Street, Creativity City, ST 12345</p>
+                    <p>Phone: (555) 123-4567</p>
+                    <p>Email: info@tanzaniteinteriors.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                        <a href="#" aria-label="Pinterest"><i data-lucide="pinterest"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Tanzanite Interiors. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
